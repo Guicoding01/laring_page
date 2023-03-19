@@ -1,0 +1,292 @@
+<style>
+    *{
+	padding: 0;
+	margin: 0;
+}
+
+body,head{
+	box-sizing: border-box;
+	height: 100%;
+	
+}
+.conteudo{
+	width: 100%;
+	height: 695px;
+	background-image: url(https://images.pexels.com/photos/4006143/pexels-photo-4006143.jpeg?cs=srgb&dl=pexels-jeandaniel-francoeur-4006143.jpg&fm=jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100% ;
+}
+.box{
+	width: 100%;	
+	
+	top: 0;
+	left: 0;
+	position:absolute;
+	
+}
+
+.container {
+		
+		text-align: center;
+		width: 460px;
+		height: 140px;
+		background-color:rgba(158, 157, 153,0.4);
+		border-radius: 20px;
+		border: 0;
+}
+
+.container h1{
+	display: inline-block;
+	margin-right: -4px;
+	margin-top: 40px;
+	color: rgb(24, 13, 54);
+}
+
+.container p{
+	display: inline-block;
+	margin-right: -4px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.left{
+
+	margin-top: 160px;	
+	padding: 90px;
+	
+
+}
+
+.right{
+	position: absolute;
+	height: 570px;
+	border-radius: 10px;
+	width: 375px;
+	background-color:rgba(79, 79, 79,0.5);
+	top: 40px;
+	right:15px ;
+	float: right;	
+}
+
+.right form{
+	padding: 40px;
+}
+
+.right h2{
+	margin-bottom: 40px;
+	margin-left:20px ;
+	color:whitesmoke;
+	transition: 2s;
+	
+}
+ .right h2:hover {
+	color:#ccc;
+	transition-duration:1.30s;
+}
+
+.right ul>label{
+	display: inline-block;
+	margin-right: -4px;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 17px;
+	color: white;
+
+	
+}
+.right ul{
+	display: inline-block;
+	margin-left: 20px;
+}
+.right ul>input[type="text"]{
+	display: inline-block;
+	margin-right: -4px;
+	width: 255px;
+	height: 25px;
+	border-radius: 10px;
+	margin-top: 7px;
+	padding-left: 15px;
+	background-color:rgba(79, 79, 79, 0.1);
+	color: white;
+
+} 
+.right ul>input[type="text"]:focus{
+	
+	
+	outline: 0;
+}
+
+
+.right button{
+	display: inline-block;
+	margin-right: -4px;
+	width: 330px;
+	height: 25px;
+	border: 0;
+	border-radius: 10px;
+	margin-top: 40px;
+	position: relative;
+	right: 35px;
+	background:rgb(24, 13, 54) ;
+	color: white;
+	font-weight: bold;
+	transition-duration:1.50s;
+	cursor: pointer;
+}
+.right button:hover{
+	background:linear-gradient(to left,#180e33 20%,#716a85 100%);
+	color: rgba(24, 13, 54,0.70);
+
+}
+	
+.clear{
+	clear: both;
+}
+select{
+	display: inline-block;
+	width: 270px;
+	height: 25px;
+	border-radius: 10px;
+	border: 1px solid;
+	margin-top: 7px;
+	background-color:transparent;
+	cursor: pointer;
+}
+select option{
+	background-color:rgba(79, 79, 79 , 0.1);
+	text-align: center;
+	
+
+}
+
+@media screen and (max-width:1100px){
+
+.right{
+	
+	position: relative;
+	top: 45px;
+	right: 550px;
+
+}
+
+
+}
+
+@media screen and (max-width:800px){
+
+.right{
+
+	position: relative;
+	top: 45px;
+	left: 10px;
+	
+}
+}
+@media screen and (max-width:1120px){
+
+	.right{
+	
+	position: absolute;
+	top: 40px;
+	left: 600px;
+	height: 500px;	
+	}
+	.conteudo{
+		height: 660px;
+	
+	}
+
+	}
+
+	@media screen and (max-width:1000px){
+
+	.box{
+	
+	max-width:calc(100% - 95px);
+
+	}
+
+	}
+	@media screen and (max-width:900px){
+		.conteudo{
+			height: 800px;
+		
+		}
+		.container{
+			position: relative;
+			bottom: 190px;
+			left: 28%;
+			max-width: 350px;
+		}
+		.right{
+	
+			position: absolute;
+			top: 240px;
+			left: 30%;
+			
+			
+		}
+	}
+	
+
+
+
+</style>
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="image-x/png" href="25.ico">
+	<title >Laring Page</title>
+
+</head>
+<body>
+	<div class="conteudo">
+	<div class="box">
+		<div class="left">
+			<div class="container">
+
+				<h1>Mundo da Programação</h1>
+				<p>Aqui é aonde se inicia mais um aprendizado para sua carreira !</p>
+
+			</div><!--container-->
+		</div><!--left-->
+
+		<div class="right">
+			<form >
+				<h2>Cadastre-se no nosso Site</h2>
+					<ul>
+						<label >Nome*</label><br>
+						<input id="name" type="text" name="name" required ><br>
+
+						<label>Sobrenome*</label><br>
+						<input type="text" name="name" required><br>
+
+						<label>Idade*</label><br>
+						  <select  name="Idade" required>
+							  <option  disabled selected >Selecione sua idade</option>
+							  <option > Maior de +18 </option>
+							  <option > Menor de -18</option>
+						  </select><br>
+							  <label >Cidade*</label><br>
+						  <select  name="cidade" required>
+							  <option  disabled selected >Selecione sua Cidade</option>
+							  <option > Brasilia </option>
+							  <option > São Paulo</option>
+							  <option > Rio De Janeiro</option>
+						  </select><br>
+
+						<button >Cadastre-se</button>
+					</ul>
+			</form>
+		</div><!--right-->
+		<div class="clear"></div>
+	</div><!--box-->
+</div><!--conteudo-->
+<script src="script/jquery.js"></script>
+
+
+</body>
